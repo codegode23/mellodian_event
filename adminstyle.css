@@ -1,0 +1,236 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --purple: #8e44ad;
+    --red: #c0392b;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-white: #ccc;
+    --light-bg: #f5f5f5;
+    --border: 1px solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+body{
+    background: #ccc;
+}
+
+
+
+.message{
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+.message span{
+font-size: 2rem;
+color: #000;
+}
+
+.message i{
+    cursor: pointer;
+    color: crimson;
+    font-size: 2.5rem;
+}
+
+.message i:hover{
+    transform: rotate(90deg);
+}
+
+.form-container{
+ 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(223, 209, 209);
+}
+
+.form-container form{
+    padding: 2rem;
+    width: 40rem;
+    border-radius:  .5rem;
+    background-color: #fff;
+    border: 1px solid rgb(121, 102, 102);
+    text-align: center;
+}
+
+.form-container form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.form-container form .box{
+    width: 100%;
+    border: 1px solid rgb(121, 102, 102);
+    border-radius:  .5rem;
+    padding: 1.2rem 1rem;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  
+   
+    
+}
+
+.form-container form p{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.form-container form p a:hover{
+    text-decoration: underline;
+}
+
+.btns{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+.btns:hover{
+    transform: scale(1.1);
+}
+
+
+.mb-1{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+
+.logs{
+   
+    margin-bottom: 3%;
+}
+.logs .logs-container{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow:  0 35px 80px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.logs a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.logs a:hover{
+    color: rgb(126, 117, 117);
+}
+
+/*Dashboard*/
+
+.dashboard{
+    min-height: 100vh;
+    background: #ccc;
+}
+.dashboard .title{
+    margin: 3%;
+    color: #333;
+}
+
+.dashboard .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    margin:  0 auto;
+    align-items: flex-start;
+}
+
+
+.dashboard .box-container .box{
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+}
+
+
+
+.dashboard .box-container .box h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+
+
+
+.dashboard .box-container .box p{
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    color: var(--black);
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: var(--border);
+}
+
+@media screen and (max-width:450px){
+
+    .logs .logs-container{
+        display: flex;
+        justify-content: space-evenly;
+        box-shadow:  0 35px 80px rgba(0,0,0,0.15);
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .logs .logs-container a{
+        margin-bottom: 3%;
+        font-size: 24px;
+    }
+    
+.dashboard .box-container .box h3{
+    font-size: 3rem;
+}
+
+.dashboard .box-container .box p{
+    font-size: 1.5rem;
+}
+}
+
+table{
+    overflow: auto;
+}

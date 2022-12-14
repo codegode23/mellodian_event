@@ -1,0 +1,254 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --purple: #8e44ad;
+    --red: #c0392b;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-white: #ccc;
+    --light-bg: #f5f5f5;
+    --border: 1px solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+section{
+    padding: 3rem 2rem;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+
+.message{
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+.message span{
+font-size: 2rem;
+color: #000;
+}
+
+.message i{
+    cursor: pointer;
+    color: crimson;
+    font-size: 2.5rem;
+}
+
+.message i:hover{
+    transform: rotate(90deg);
+}
+
+.form-container{
+ 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgb(223, 209, 209);
+}
+
+.form-container form{
+    padding: 2rem;
+    width: 40rem;
+    border-radius:  .5rem;
+    background-color: #fff;
+    border: 1px solid rgb(121, 102, 102);
+    text-align: center;
+}
+
+.form-container form h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+    
+}
+
+.form-container form .box{
+    width: 100%;
+    border: 1px solid rgb(121, 102, 102);
+    border-radius:  .5rem;
+    padding: 1.2rem 1rem;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.form-container form p{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.form-container form p a:hover{
+    text-decoration: underline;
+}
+
+.btns{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+.btns:hover{
+    transform: scale(1.1);
+}
+
+
+.mb-1{
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+}
+
+
+.logs{
+    margin-bottom: 3%;
+}
+.logs .logs-container{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow:  0 30px 80px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    max-width: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.logs a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.logs a:hover{
+    color: rgb(126, 117, 117);
+}
+
+#booking{
+    width: 100%;
+}
+
+#booking .heading{
+    text-align: center;
+}
+
+#booking .heading h1{
+    font-size: 30px;
+}
+
+#booking .heading p{
+    font-size: 19px;
+}
+
+.events{
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 4%;
+}
+
+.events .boxe{
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3%;
+    padding: .6rem;
+}
+
+.boxe .image{
+    border: 1px solid rgb(233, 4, 4);
+    width: 100%;
+}
+
+.boxe .image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.boxe .info {
+    border: 1px solid black;
+    padding: .6rem;
+    text-align: start;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.boxe .info h3{
+    margin-top: 3%;
+}
+
+.boxe .info h4{
+    margin-top: 3%;
+}
+
+.boxe .info p{
+    margin-top: 3%;
+}
+
+.boxe .info select{
+    border: 1px solid black;
+    height: 30px;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.boxe .info input[type=number]{
+    border: 1px solid #ccc;
+    max-width: 40px;
+    border-radius: 5px;
+}
+
+.boxe .info input[type=submit]{
+    border: 1px solid black;
+    margin-top: 5%;
+    cursor: pointer;
+    padding: .3rem;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+
+.boxe .info input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
